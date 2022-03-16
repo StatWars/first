@@ -63,7 +63,7 @@
     var user1=params.get('u1');
 
     function u1(cid1){
-        fetch('https://api.subscriberwars.space/sbp/yt/'+cid1+'').then(res=>res.json()).then(data=>{
+        fetch('https://api.subscriberwars.space/sbp/yt/'UCX6OQ3DkcsbYNE6H8uQQuVA'').then(res=>res.json()).then(data=>{
             m1d.innerHTML=Math.trunc((data.data.daily[0].subs-data.data.daily[1].subs)/1440).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             m2d.innerHTML=Math.trunc((data.data.daily[0].subs-data.data.daily[2].subs)/2880).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             m3d.innerHTML=Math.trunc((data.data.daily[0].subs-data.data.daily[3].subs)/4320).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
